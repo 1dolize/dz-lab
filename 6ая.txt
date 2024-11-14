@@ -1,0 +1,76 @@
+#include <stdio.h>
+#include<locale.h>
+#include <math.h>
+int lab6task1()
+{
+ int year;
+ puts("введите год:\n");
+ scanf("%i", &year);
+ int d;
+ d = year % 4;
+ if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) puts("год високосный\n");
+ else printf("\n%i год невисокосный\n", year);
+}
+int lab6task2(zx)
+{
+ float F;
+ double x;
+ scanf("%lf", &x);
+ F = x <= 2 ? x * x + 4 * x + 5 : 1 / (x * x + 4 * x + 5);
+ printf("\n%.2f\n\n", F);
+
+ printf("КОНТРОЛЬНЫЙ ПРИМЕР\n при х<2: 10\n при x>2: 17\n");
+}
+int homework_24()
+{
+    int num, rub, cop;
+
+    printf("Введите кол-во копеек: ");
+
+    scanf("%d", &num);
+
+    rub = num / 100;
+    cop = num % 100;
+
+    if (rub % 10 == 1)
+    {
+        printf("\n%d рубль и ", rub);
+    }
+    if ((rub % 10 > 1) && (rub % 10 < 5))
+    {
+        printf("\n%d рубля и ", rub);
+    }
+    if ((5 <= rub % 10) && (rub % 10 <= 9))
+    {
+        printf("\n%d рублей и ", rub);
+    }
+    if (rub % 10 == 0)
+    {
+        printf("\n%d рублей и ", rub);
+    }
+
+
+    if (cop % 10 == 1)
+    {
+        printf("%d копейка", cop);
+    }
+    if ((cop % 10 > 1) && (cop % 10 < 5))
+    {
+        printf("%d копейки", cop);
+    }
+    if ((5 <= cop % 10) && (cop % 10 <= 9))
+    {
+        printf("%d копеек", cop);
+    }
+    if (cop % 10 == 0)
+    {
+        printf("%d копеек", cop);
+    }
+}
+int main()
+{
+ setlocale(LC_CTYPE, "RUS");
+ lab6task1();
+ lab6task2();
+ homework_24();
+}

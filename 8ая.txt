@@ -1,0 +1,155 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+
+double f(double x) {
+    return log10(x) - pow((x - 2), 2);
+}
+int main()
+{
+ setlocale(LC_CTYPE, "RUS");
+
+ ////задание 0
+ //   int start;
+ //   char s1, s2;
+
+ //   
+ //   printf("Введите количество символов: ");
+ //   scanf("%d", &start);
+
+ //   
+ //   printf("Введите первый символ: ");
+ //   scanf(" %c", &s1);
+
+ //   printf("Введите второй символ: ");
+ //   scanf(" %c", &s2);
+
+ // 
+ //   for (int i = 0; i < start; i++) {
+ //    
+ //       putchar((i < start / 2) * s1 + (i >= start / 2) * s2);
+ //       putchar('!'); // знак после каждого символа
+ //   }
+ //   putchar('+');
+
+ //задание 1
+ //int n, m;
+ //int s = 0;
+ //int k = 0;
+
+ //printf("Введите значение n: ");
+ //scanf("%d", &n);
+
+ //printf("Введите значение m: ");
+ //scanf("%d", &m);
+
+ //if (m > n) {
+ // for (int i = m; i >= n; i--) { 
+ //  s += i;  
+ //  printf("выполнено %d раз\n", ++k);
+ // }
+ //}
+ //else {
+ // for (int i = m; i <= n; i++) { 
+ //  s += i;  
+ //  printf("Выполнено %d раз\n", ++k);
+ // }
+ //}
+
+ //printf("результат %d\n", s);
+
+ //задание 1А
+    //int n, m;
+
+    //printf("Введите степень n: ");
+    //scanf("%d", &n);
+
+    //printf("Значения 2^n:\n");
+    //printf("%-10s | %-10s\n", "2^n", "Результат");
+    //printf("-------------------------\n");
+
+    //for (int i = 0; i <= n; i++) {
+    //    int result = (int)pow(2, i);
+
+    //    printf("%-10d | %*d\n", i, 10, result);
+    //}
+
+    //printf("\nРезультаты в K:\n");
+    //for (int i = 0; i <= n; i++) {
+    //    double resultK = (double)pow(2, i) / 1024;
+
+    //    printf("2^%d = %.1fK\n", i, resultK);
+    //}
+
+    //printf("\nВведите целое число m: ");
+    //scanf("%d", &m);
+
+    //printf("\nЗначения 2^n до %d:\n", m);
+    //printf("%-10s | %-10s\n", "2^n", "Результат");
+    //printf("-------------------------\n");
+
+    //for (int i = 0; i <= m; i++) {
+    //    int result = (int)pow(2, i);
+    //    printf("%-10d | %*d\n", i, 10, result);
+
+    //    double resultK = (double)result / 1024;
+    //    printf("2^%d = %.1fK\n", i, resultK);
+    //}
+
+    //задание 2 вариант 12
+
+    //double nach, kon, step;
+
+    //printf("Введите начало диапазона (x): ");
+    //scanf("%lf", &nach);
+    //printf("Введите конец диапазона (x): ");
+    //scanf("%lf", &kon);
+    //printf("Введите шаг табуляции: ");
+    //scanf("%lf", &step);
+
+    //// Проверяем, чтобы шаг был положительным
+    //if (step <= 0) {
+    //    printf("Шаг табуляции должен быть положительным числом\n");
+    //}
+
+    //// Вывод заголовка таблицы
+    //printf("\n|-----|----------|\n");
+    //printf("|  x  |   f(x)   |\n");
+    //printf("|-----|----------|\n");
+
+    //// Табуляция функции
+    //for (double x = nach; x <= kon; x += step) {
+    //    double result = f(x);
+    //    printf("|%5.2f|%10.5f|\n", x, result);
+    //}
+
+    //printf("|-----|----------|\n");
+
+    //    // Вывод заголовка таблицы
+    //    printf("\n|-----|----------|\n");
+    //    printf("|  x  |   f(x)   |\n");
+    //    printf("|-----|----------|\n");
+
+    //    // Табуляция функции
+    //    for (double x = nach; x <= kon; x += step) {
+    //        double result = f(x);
+    //        printf("|%5.2f|%10.5f|\n", x, result);
+    //    }
+
+    //    printf("------|----------|\n");
+
+        //задание 3 вариант 24
+       /* int n;
+        unsigned long long fact = 1;
+
+        printf("Введите факториал: ");
+        scanf("%d", &n);
+        if (n < 0) {
+            printf("Факториал не может быть отрицательным\n");
+        }
+        for (int i = 1; i <= n; i++) {
+            fact *= i;
+        }
+
+        printf("%d! = %llu\n", n, fact);
+        }*/

@@ -1,0 +1,178 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+
+int main()
+
+{
+ setlocale(LC_ALL, "RUS");
+ // ЗАДАНИЕ 1
+ //char c;
+
+ //printf("Введите цифру или букву: ");
+
+ //scanf("%c", &c);//считывание с консоли
+
+ //switch (c)
+
+ //{
+
+ //case '1':
+
+ // printf("Это цифра\n");
+
+ // break;
+
+ //case '2':
+
+ // printf("Это цифра\n");
+
+ // break;
+
+ //case '3':
+ // printf("Это цифра\n");
+
+ // break;
+
+ //case '4':
+ // printf("Это цифра\n");
+
+ // break;
+
+ //case '5':
+ // printf("Это цифра\n");
+
+ // break;
+
+ //case '6':
+ // printf("Это цифра\n");
+
+ // break;
+
+ //case '7':
+ // printf("Это цифра\n");
+
+ // break;
+
+ //case '8':
+ // printf("Это цифра\n");
+
+ // break;
+
+ //case '9':
+ // printf("Это цифра\n");
+
+ // break;
+
+ //case '0':
+ // printf("Это цифра\n");
+
+ // break;
+
+
+ //default:
+
+ // printf("Это буква'\n");
+
+ //    
+ //}
+
+ //return 0;
+ 
+
+ ////ЗАДАНИЕ 2
+ //float x;
+ //float y;
+ //char c;
+ //float res;
+
+ //printf("Введите первое число, знак операции и второе число : ");
+ //scanf(" %f%c%f", &x, &c, &y);
+
+ //switch (c)
+ //{
+ //case '+':
+ // res = x + y;
+ // printf("Результат : %f", res);
+
+ // break;
+
+ //case '-':
+ // res = x - y;
+ // printf("Результат : %f", res);
+
+ // break;
+
+ //case '*':
+ // res = x * y;
+ // printf("Результат : %f", res);
+
+ // break;
+
+ //case '/':
+ // res = x / y;
+ // printf("Результат : %f", res);
+
+ // break;
+
+ //case '^':
+ // res = pow(x, y);
+ // printf("Результат : %f", res);
+
+ // break;
+
+ //default:
+ // printf("Невыполнимая операция");
+
+ // break;
+ //}
+ //return 0;
+
+    //ДЗ ВАРИАНТ 24
+ /*char c;
+ printf("Введите символ операции : ");
+ scanf("%c", &c);
+ switch (c)
+ {
+ case '+':
+  printf("%c - сложение", c);
+
+  break;
+
+ case '-':
+  printf("%c - вычитание", c);
+
+  break;
+
+ case '*':
+  printf("%c - умножение", c);
+
+  break;
+
+ case '/':
+  printf("%c - деление", c);
+
+  break;
+
+ case '^':
+  printf("%c - возведение в степень", c);
+
+  break;
+ case '%':
+  printf("%c - деление нацело", c);
+
+  break;
+
+ case ':':
+  printf("%c - деление без остатка", c);
+
+  break;
+ 
+ default:
+  printf("Неизвестный символ операции.");
+
+  break;
+
+
+ }
+ return 0;*/
